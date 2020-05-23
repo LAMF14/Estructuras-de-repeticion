@@ -1,0 +1,52 @@
+#usando if,else anidados
+puts 'hola, ¿cual es tu nombre?'
+STDOUT.flush
+nombre = gets.chomp
+puts 'hola,' + nombre + '.'
+
+if nombre == 'Iker'
+	puts '¡bonito nombre!'
+else 
+	if nombre == 'Iker'
+		puts '¡bonito nombre!'
+	else
+		if nombre == 'Pancracio'
+			puts 'este nombre es extraño'
+		end
+end
+
+#usando elsif
+puts 'hola, ¿cual es tu nombre?'
+STDOUT.flush
+nombre = gets.chomp
+puts 'hola,' + nombre + '.'
+if nombre=='Iker'
+	puts '¡bonito nombre!'
+elsif nombre == 'Pancracio'
+	puts 'este nombre es extraño'
+end
+
+#otra es el, or ||
+puts 'hola, ¿cual es tu nombre?'
+STDOUT.flush
+nombre = gets.chomp
+puts 'hola,' + nombre + '.'
+if nombre = ' marcela' || nombre= 'lisbeth'
+	puts 'nombres muy bellos'
+end
+
+#otra estructura es unless 
+nombre = 'Luigi'
+unless nombre == 'Mario'
+	puts 'ese nombre es de un videojuego'
+end
+
+
+#usando case
+
+x = 1
+case 
+when x < 0 then puts "#{x} es menor que 0"
+when x == 0 then puts "#{x} es igual a 0"
+when x > 0 then puts "#{x}es mayor que 0"
+end
